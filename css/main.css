@@ -181,17 +181,6 @@ ul.topnav.responsive li a {
     text-align:left;
 }
 
-/*Hero*/
-
-.hero-image {
-    background-image: url(../img/aleena-one.jpeg);
-    width:100%;
-    padding-bottom: 80%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /*primary info*/
 
 .primary-info {
@@ -212,6 +201,94 @@ ul.topnav.responsive li a {
     border-bottom: 3px dotted #313131;
     margin:4% 5%;
     text-align: center;
+    font-size:1.6em;
+}
+
+.primary-image {
+    background-image: url(../img/aleena-one.jpeg);
+    width:100%;
+    padding-bottom: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*secondary info*/
+
+.second-image {
+    background-image: url(../img/aleena-two.jpeg);
+    width:100%;
+    padding-bottom:80%;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.second-info {
+    border:3px solid black;
+    background-color:rgba(255,255,255,0.7);
+    width:90%;
+    margin:auto;
+    position:absolute;
+    top:90%;
+    left:5%;
+    right:5%;
+    font-family:'Monda', sans-serif;
+}
+
+.second-info h3 {
+    font-size:1em;
+    padding:2%;
+    margin:1%;
+    text-align:justify;
+    font-weight: 100;
+}
+
+.second-image-two {
+    background-image: url(../img/aleena-two-again.jpeg);
+    width:100%;
+    padding-bottom:80%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second-info-two {
+    border:3px solid black;
+    background-color:rgba(255,255,255,0.7);
+    width:90%;
+    margin:auto;
+    position:absolute;
+    top:140%;
+    left:5%;
+    right:5%;
+    font-family:'Monda', sans-serif;
+}
+
+.second-info-two ul {
+    list-style: none;
+    font-size:1em;
+}
+
+/*third info*/
+
+.third-image {
+    background-image: url(../img/aleena-three.jpeg);
+    clip:rect(5px,0px,2px,0px);
+    width:100%;
+    padding-bottom:80%;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.third-info {
+}
+
+.third-info h2 {
+}
+
+.third-info h3 {
 }
 
 /*====Tablet====*/
