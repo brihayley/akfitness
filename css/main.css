@@ -104,6 +104,7 @@ body {
     display: flex;*/
     color: #313131;
     font-size: 16px;
+    background-color: #464242;
 }
 /*===Header===*/
 
@@ -134,7 +135,7 @@ ul.topnav {
     background-color: white;
     width:20%;
     position:absolute;
-    top:5%;;
+    top:5%;
     left:3%;
     border: 3px solid black;
     border-radius: 12%;
@@ -184,22 +185,17 @@ ul.topnav.responsive li a {
 /*primary info*/
 
 .primary-info {
-    border:3px solid black;
+/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
-    width:90%;
-    height:20%;
-    margin:auto;
-    position:absolute;
-    top:50%;
-    left:5%;
-    right:5%;
+/*    width:90%;*/
+/*    height:20%;*/
     font-family: 'Fjalla One', sans-serif;
 }
 .primary-info h2{
     padding:2%;
     border-top: 3px dotted #313131;
     border-bottom: 3px dotted #313131;
-    margin:4% 5%;
+    margin:2% 5%;
     text-align: center;
     font-size:1.6em;
 }
@@ -229,10 +225,10 @@ ul.topnav.responsive li a {
     background-color:rgba(255,255,255,0.7);
     width:90%;
     margin:auto;
-    position:absolute;
-    top:90%;
+    /*position:absolute;
+    top:100%;
     left:5%;
-    right:5%;
+    right:5%;*/
     font-family:'Monda', sans-serif;
 }
 
@@ -258,10 +254,10 @@ ul.topnav.responsive li a {
     background-color:rgba(255,255,255,0.7);
     width:90%;
     margin:auto;
-    position:absolute;
+    /*position:absolute;
     top:140%;
     left:5%;
-    right:5%;
+    right:5%;*/
     font-family:'Monda', sans-serif;
 }
 
@@ -274,7 +270,6 @@ ul.topnav.responsive li a {
 
 .third-image {
     background-image: url(../img/aleena-three.jpeg);
-    clip:rect(5px,0px,2px,0px);
     width:100%;
     padding-bottom:80%;
     background-position:center;
@@ -283,49 +278,162 @@ ul.topnav.responsive li a {
 }
 
 .third-info {
+    border:3px solid black;
+    background-color:rgba(255,255,255,0.7);
+    width:90%;
+    margin:auto;
+    /*position:absolute;
+    top:185%;
+    left:5%;
+    right:5%;*/
 }
 
 .third-info h2 {
+    font-family: 'Fjalla One',serif;
+    font-size:1.5em;
+    padding:2%;
+    margin:1%;
+    text-align:justify;
 }
 
 .third-info h3 {
+    font-family:'Monda', sans-serif;
+    font-size:1em;
+    padding:2%;
+    margin:1%;
+    text-align:justify;
+    font-weight: 100;
+}
+
+/*Testimonials*/
+
+.test-wrapper {
+    width:100%;
+}
+/*.testimonials {
+    width:98.5%;
+    margin:0px;
+    /*position:absolute;
+    top:232.5%;*/
+    border:3px solid black;
+    background-color:white;
+}*/
+.testimonials h2{
+    font-family: 'Fjalla One',serif;
+    font-size:1.7em;
+    line-height: .5em;
+    padding-left: 5%;
+}
+
+.test-img {
+    background-image: url(../img/aleena-three.jpeg);
+    width:100%;
+    padding-bottom:80%;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.test-info {
+    border:3px solid black;
+    background-color:rgba(255,255,255,0.7);
+    width:90%;
+    margin:auto;
+    /*position:absolute;
+    top:250%;
+    left:5%;
+    right:5%;*/
+    font-family:'Monda', sans-serif;
+}
+
+.test-info h3 {
+    font-size:1em;
+    padding:2%;
+    margin:1%;
+    text-align:justify;
+    font-weight: 100;
+}
+.instagram {
+    width:90%;
+    height:20%;
+    margin:auto;
+    font-family: 'Fjalla One', sans-serif;
+    color:silver;
+    text-align: center;
+    margin:2% auto 1% auto;
+}
+
+#instafeed {
+    width:90%;
+    margin:auto;
+    display:webkitbox;
+    display:mozbox;
+    display:msflexbox;
+    display:webkitflex;
+    display:flex;
+    -webkit-box-pack:space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack:space-around;
+    -webkit-justify-content:space-around;
+    justify-content: space-around;
+    align-content: space-around;
+    -webkit-align-content:space-around;
+    flex-flow: row wrap;
+    -ms-flex-flow: -ms-flex-row -ms-flex-wrap;
+    -webkit-flex-flow: flex-row flex-wrap;
+}
+#instafeed a {
+    display: block;
+    float: left;
+    position: relative;
+    width: 45%;
+    margin:1%;
+    padding:1%;
+    border:1px solid silver;
+}   
+#instafeed img {
+        display: block;
+        width: 100%;
+        height: 100%;
 }
 
 /*====Tablet====*/
 
 @media screen and (min-width:680px) {
-
+    
+    body {
+        background-color: transparent;
+    }
     /*===Header===*/
     #logo {
         border:none;
         border-radius: 10%;
-        margin:0;
-        top:20px;
-        width:30%;
-        padding-bottom:10%;
+        margin:0 0 0 1%;
+        top:40px;
+        width:33%;
+        padding-bottom:16%;
     }
 
     /*Nav*/
     nav {
-        float:right;
-        position:relative;
-        bottom:70px;
+        position: relative;
+        bottom:65px;
         right:20px;
-        width:50%;
+        float:right;
+        width:60%;
     }
     ul.topnav {
-        width:100%;
-        bottom:0;
         left:0;
         padding:0;
         margin:auto;
+        width:100%;
     }
     ul.topnav li:not(:first-child) {
     display:block;
     }
     ul.topnav li {
         float:left;
-        padding:2% 5%;
+        padding:1.5% 4%;
         text-align: center;
     }
     ul.topnav li.a {
@@ -335,13 +443,72 @@ ul.topnav.responsive li a {
         text-decoration:none;
         transition:0.3s;
         -webkit-transition:0.3s;
-        font-size:17px;
+        font-size:1.1em;
     }
     ul.topnav li a:hover {
         color:#20836a;
     }
     ul.topnav li.icon {
         display:none;
+    }
+    
+    /*primary info*/
+    
+    .primary-image {
+        background-attachment: fixed;
+    }
+    
+    /*secondary info*/
+    
+    .second-image {
+        background-attachment:fixed;
+    }
+    
+    .second-image-two {
+        background-attachment: fixed;
+    }
+    
+    /*third info*/
+
+    .third-image {
+        background-attachment: fixed;
+    }
+    
+    /*testimonials*/
+    
+    .test-grid {
+        width:100%;
+        margin:1%;
+        display:webkitbox;
+        display:mozbox;
+        display:msflexbox;
+        display:webkitflex;
+        display:flex;
+        -webkit-box-pack:space-around;
+        -moz-box-pack: space-around;
+        -ms-flex-pack:space-around;
+        -webkit-justify-content:space-around;
+        justify-content: space-around;
+        align-content: space-around;
+        -webkit-align-content:space-around;
+        flex-flow: row wrap;
+        -ms-flex-flow: -ms-flex-row -ms-flex-wrap;
+        -webkit-flex-flow: flex-row flex-wrap;
+    }
+    
+    .test-wrapper {
+        width:33%;
+    }
+    
+    /*====Instagram Feed====*/
+    #instafeed a {
+    display: block;
+    float: left;
+    position: relative;
+    width: 20%;
+    margin:1%;
+    padding:1%;
+    border:1px solid silver;
     }
 }
 
