@@ -185,25 +185,24 @@ ul.topnav.responsive li a {
 /*primary info*/
 
 .primary-info {
-/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
-/*    width:90%;*/
-/*    height:20%;*/
+    padding:2%;
     font-family: 'Fjalla One', sans-serif;
 }
 .primary-info h2{
-    padding:2%;
-    border-top: 3px dotted #313131;
-    border-bottom: 3px dotted #313131;
-    margin:2% 5%;
+    padding:1% 2%;
+    margin:2% auto;
     text-align: center;
     font-size:1.6em;
+    border-top: 3px dotted #313131;
+    border-bottom: 3px dotted #313131;
+    max-width: 520px;
 }
 
 .primary-image {
     background-image: url(../img/aleena-one.jpeg);
     width:100%;
-    padding-bottom: 80%;
+    padding-bottom: 70%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -221,21 +220,17 @@ ul.topnav.responsive li a {
 }
 
 .second-info {
-    border:3px solid black;
+/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
-    width:90%;
-    margin:auto;
-    /*position:absolute;
-    top:100%;
-    left:5%;
-    right:5%;*/
+    padding:1%;
+/*    width:90%;*/
     font-family:'Monda', sans-serif;
 }
 
 .second-info h3 {
     font-size:1em;
-    padding:2%;
-    margin:1%;
+    padding:0% 2%;
+    margin:0%;
     text-align:justify;
     font-weight: 100;
 }
@@ -250,14 +245,11 @@ ul.topnav.responsive li a {
 }
 
 .second-info-two {
-    border:3px solid black;
+/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
-    width:90%;
-    margin:auto;
-    /*position:absolute;
-    top:140%;
-    left:5%;
-    right:5%;*/
+    padding:1%;
+/*    width:90%;*/
+/*    margin:auto;*/
     font-family:'Monda', sans-serif;
 }
 
@@ -278,20 +270,19 @@ ul.topnav.responsive li a {
 }
 
 .third-info {
-    border:3px solid black;
+/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
+    padding:1%;
+/*
     width:90%;
     margin:auto;
-    /*position:absolute;
-    top:185%;
-    left:5%;
-    right:5%;*/
+*/
 }
 
 .third-info h2 {
     font-family: 'Fjalla One',serif;
     font-size:1.5em;
-    padding:2%;
+    padding:1%;
     margin:1%;
     text-align:justify;
 }
@@ -299,7 +290,7 @@ ul.topnav.responsive li a {
 .third-info h3 {
     font-family:'Monda', sans-serif;
     font-size:1em;
-    padding:2%;
+    padding:1%;
     margin:1%;
     text-align:justify;
     font-weight: 100;
@@ -310,14 +301,16 @@ ul.topnav.responsive li a {
 .test-wrapper {
     width:100%;
 }
-/*.testimonials {
+/*
+.testimonials {
     width:98.5%;
     margin:0px;
-    /*position:absolute;
-    top:232.5%;*/
+    position:absolute;
+    top:232.5%;
     border:3px solid black;
     background-color:white;
-}*/
+}
+*/
 .testimonials h2{
     font-family: 'Fjalla One',serif;
     font-size:1.7em;
@@ -335,14 +328,13 @@ ul.topnav.responsive li a {
 }
 
 .test-info {
-    border:3px solid black;
+/*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
+    padding:1%;
+/*
     width:90%;
     margin:auto;
-    /*position:absolute;
-    top:250%;
-    left:5%;
-    right:5%;*/
+*/
     font-family:'Monda', sans-serif;
 }
 
@@ -401,39 +393,57 @@ ul.topnav.responsive li a {
 
 @media screen and (min-width:680px) {
     
-    body {
-        background-color: transparent;
-    }
     /*===Header===*/
-    #logo {
-        border:none;
-        border-radius: 10%;
-        margin:0 0 0 1%;
-        top:40px;
-        width:33%;
-        padding-bottom:16%;
+    
+    header {
+        height:0px;
     }
+    #logo {
+    width:30%;
+    padding-bottom:30%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    border-radius:10%;
+    border: none;
+    position:absolute;
+    top:21%;
+    left:35%;
+    }
+    
+/*
+    @media screen and (min-width:930px){
+        #logo{
+            width:25%;
+            padding-bottom: 25%;
+            left:37%;
+        }
+    }
+*/
 
     /*Nav*/
     nav {
-        position: relative;
-        bottom:65px;
-        right:20px;
-        float:right;
-        width:60%;
+        position: absolute;
+        top:1%;
+        left:10%;
+        width:80%;
     }
     ul.topnav {
         left:0;
         padding:0;
         margin:auto;
         width:100%;
+        border:none;
+        background-color:rgba(255,255,255,0.7);
     }
     ul.topnav li:not(:first-child) {
     display:block;
     }
     ul.topnav li {
         float:left;
-        padding:1.5% 4%;
+        width:12%;
+        padding:1% 4%;
         text-align: center;
     }
     ul.topnav li.a {
@@ -456,6 +466,43 @@ ul.topnav.responsive li a {
     
     .primary-image {
         background-attachment: fixed;
+        padding-bottom: 68%;
+    }
+    
+    @media screen and (min-width:800px){
+        .primary-image {
+            padding-bottom:60%;
+        }
+    }
+    
+    @media screen and (min-width:900px){
+        .primary-image {
+            padding-bottom:55%;
+        }
+        #logo{
+            width:23%;
+            padding-bottom:23%;
+            top:23%;
+            left:39%;
+        }
+    }
+    
+    @media screen and (min-width:1000px){
+        .primary-image {
+            padding-bottom:50%;
+        }
+    }
+    
+    @media screen and (min-width:1200px){
+        #logo{
+            width:20%;
+            padding-bottom:20%;
+            top:23%;
+            left:40%;
+        }
+        .primary-image {
+            padding-bottom:45%;
+        }
     }
     
     /*secondary info*/
