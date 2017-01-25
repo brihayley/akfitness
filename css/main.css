@@ -196,7 +196,7 @@ ul.topnav.responsive li a {
     font-size:1.6em;
     border-top: 3px dotted #313131;
     border-bottom: 3px dotted #313131;
-    max-width: 520px;
+    max-width: 620px;
 }
 
 .primary-image {
@@ -213,7 +213,7 @@ ul.topnav.responsive li a {
 .second-image {
     background-image: url(../img/aleena-two.jpeg);
     width:100%;
-    padding-bottom:80%;
+    padding-bottom:70%;
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -222,17 +222,18 @@ ul.topnav.responsive li a {
 .second-info {
 /*    border:3px solid black;*/
     background-color:rgba(255,255,255,0.7);
-    padding:1%;
+    padding:2% 10%;
 /*    width:90%;*/
     font-family:'Monda', sans-serif;
 }
 
 .second-info h3 {
     font-size:1em;
-    padding:0% 2%;
-    margin:0%;
+    padding:1% 2%;
+    margin:1% auto;
     text-align:justify;
     font-weight: 100;
+/*    max-width: 640px;*/
 }
 
 .second-image-two {
@@ -263,7 +264,7 @@ ul.topnav.responsive li a {
 .third-image {
     background-image: url(../img/aleena-three.jpeg);
     width:100%;
-    padding-bottom:80%;
+    padding-bottom:70%;
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -468,10 +469,40 @@ ul.topnav.responsive li a {
         background-attachment: fixed;
         padding-bottom: 68%;
     }
+    .primary-info h2 {
+            font-size:1.7em;
+        }
+    .second-image {
+        padding-bottom:68%;
+    }
+    .second-info {
+        padding: 2% 23%;
+    }
+    .second-image-two {
+        padding-bottom:68%;
+    }
+    .third-image {
+        padding-bottom:68%;
+    }
     
     @media screen and (min-width:800px){
         .primary-image {
             padding-bottom:60%;
+        }
+        .primary-info h2 {
+            font-size:1.8em;
+        }
+        .second-image {
+        padding-bottom:60%;
+        }
+        .second-info {
+        padding: 2% 25%;
+        }
+        .second-image-two {
+        padding-bottom:60%;
+        }
+        .third-image {
+        padding-bottom:60%;
         }
     }
     
@@ -485,11 +516,44 @@ ul.topnav.responsive li a {
             top:23%;
             left:39%;
         }
+        .primary-info h2 {
+            font-size:1.9em;
+        }
+        .second-image {
+        padding-bottom:55%;
+        }
+        .second-info {
+        padding: 2% 27%;
+        }
+        .second-info h3 {
+            font-size:1.1em;
+        }
+        .second-image-two {
+        padding-bottom:55%;
+        }
+        .third-image {
+        padding-bottom:55%;
+        }
     }
     
     @media screen and (min-width:1000px){
         .primary-image {
             padding-bottom:50%;
+        }
+        .primary-info h2 {
+            font-size:1.9em;
+        }
+        .second-image {
+        padding-bottom:50%;
+        }
+        .second-info h3 {
+            font-size:1.2em;
+        }
+        .second-image-two {
+        padding-bottom:50%;
+        }
+        .third-image {
+        padding-bottom:50%;
         }
     }
     
@@ -502,6 +566,12 @@ ul.topnav.responsive li a {
         }
         .primary-image {
             padding-bottom:45%;
+        }
+        .second-image {
+        padding-bottom:45%;
+        }
+        .second-info h3 {
+            font-size:1.3em;
         }
     }
     
