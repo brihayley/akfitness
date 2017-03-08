@@ -22,18 +22,17 @@
 
         <!-- Add your site or application content here -->
         <header>
-            <div id="logo">
-<!--                <div id="logo-img"></div>-->
+            <div id="home-logo">
             </div>
-            <nav>
-                <ul class="topnav" id="myTopNav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="home-nav">
+                <ul class="home-topnav" id="myTopNavHome">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/schedule.html">Schedule</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
                     <li class="icon">
-                        <a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+                        <a href="javascript:void(0);" onclick="toggleNavHome()">&#9776;</a>
                     </li>
                 </ul>
             </nav>
@@ -70,11 +69,11 @@
                     <li>so EVERYONE can see it</li>
                 </ul>
             </div>
-        <div class="third-info">
+        <div class="third-info" id="lg-screen">
             <h2>WHY train with AKFitness?</h2>
         </div>
         <div class="third-image"></div>
-        <div class="third-info">
+        <div class="third-info" id="sm-screen">
             <h2>WHY train with AKFitness?</h2>
             <h3>AKFitness will help you achieve your fitness goals efficently. You will work hard, but you will also see RESULTS. AKFitness will not only train your body, but also your mind. You can receive a personalized dieting plan that is tailored to work <em>with</em> your body, not against it. Still need more reasons? Check out what some other clients have to say:</h3>
         </div>
@@ -98,8 +97,10 @@
                     Sesame snaps liquorice chocolate bar cake gummies muffin macaroon donut. Fruitcake cupcake oat cake brownie dragée liquorice. Danish cake muffin danish powder."</h3></div>
             </div>
         </div>
+        <div>
         <h2 class="instagram">Follow @a_kanner32 on Instagram</h2>
         <div id="instafeed"></div>
+        </div>
         <script src="js/instafeed.js/instafeed.min.js"></script>
         <script type="text/javascript">
             var userFeed = new Instafeed({
